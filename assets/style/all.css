@@ -15172,7 +15172,8 @@ header .nav {
   top: -8px !important;
 }
 
-.h-title {
+.h-title,
+.footer-input p {
   font-size: 32px;
 }
 
@@ -15297,6 +15298,18 @@ header .nav {
     max-width: 397px;
     font-size: 20px;
   }
+}
+
+footer .footer-top {
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+footer a {
+  position: relative;
+  right: -16px;
 }
 
 /*# sourceMappingURL=all.css.map */
