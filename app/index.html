@@ -8,195 +8,160 @@ current: index
 <!-- banner -->
 <div class="banner d-flex flex-column justify-content-end flex-md-row align-items-center">
   <div class="container mb-7 mb-md-0">
-    <div class="text-white offset-md-1">
-      <h1 class="fw-bold h-title lh-base">台北當代藝術展</h1>
-      <p class="fw-bold fs-5 lh-base">01 JUN - 31 OCT</p>
-      <div class="d-flex justify-content-start">
-        <a href="#" class="btn rounded me-2 bg-secondary text-white px-5 py-25">購買票券</a>
-        <a href="#" class="btn rounded border-white text-white px-5 py-25">詳細資訊</a>
+    <div class="row">
+      <div class="text-white col-md-4 offset-md-1">
+        <h1 class="fw-bold h-title lh-base">台北當代藝術展</h1>
+        <p class="fw-bold fs-5 lh-base">01 JUN - 31 OCT</p>
+        <div class="d-flex justify-content-start">
+          <a href="#" class="btn rounded me-2 bg-secondary text-white px-5 py-25">購買票券</a>
+          <a href="#" class="btn rounded border-white text-white px-5 py-25">詳細資訊</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- nav -->
-<nav class="nav d-flex flex-nowrap justify-content-md-center border-bottom border-my-light">
-  <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">音樂</a>
-  <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">戲劇</a>
-  <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">設計</a>
-  <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">藝術</a>
-  <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">美食</a>
-  <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">旅遊</a>
-  <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">電影</a>
-  <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">親子</a>
-  <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">期間限定</a>
-</nav>
-
+<div class="nav-scroller">
+  <nav class="nav d-flex flex-nowrap justify-content-md-center">
+    <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">音樂</a>
+    <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">戲劇</a>
+    <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">設計</a>
+    <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">藝術</a>
+    <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">美食</a>
+    <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">旅遊</a>
+    <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">電影</a>
+    <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">親子</a>
+    <a class="nav-link text-my-light mx-2 my-1 py-25" href="#">期間限定</a>
+  </nav>
+</div>
 <!-- hot -->
 <div class="hot pt-35 pt-md-6">
   <h2 class="container fw-bold h-title lh-base mb-md-4">熱門特展</h2>
-  <ul class="list-unstyled">
-    <!-- 2020 台味設計展 -->
-    <li class="hot-item bg-my-bgc mb-3 mb-md-35 py-4 py-md-0">
-      <div class="container">
-        <div class="row">
-          <!-- .col-md-4 -->
-          <img src="./assets/images/hot-1.jpg" alt="2020 台味設計展" class="col-md-4 hot-item-img pe-md-0">
-
-          <!-- .col-md-8 -->
-          <div class="hot-itme-body col-md-8 pt-2 px-md-4 py-md-47 d-md-flex justify-content-md-between">
-            <!-- hot-itme-body-1 -->
-            <div class="hot-itme-body-1 d-md-flex flex-md-column position-relative me-md-3">
-              <h3 class="mb-1 hot-item-title lh-base fw-bold">
-                2020 台味設計展
-                <a herf="#" class="ps-25 d-md-none fb-link-1"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon" class="fb-icon"></a>
-              </h3>
-              <p class="mb-2 hot-item-price lh-base">$350</p>
-              <p class="mb-35 hot-item-intro lh-base">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
-              <div class="d-flex justify-content-start mt-auto">
-                <a href="#" class="btn rounded me-2 bg-my-dark text-white px-3 py-25">購買票券</a>
-                <a href="#" class="btn rounded border-my-dark text-red-dark px-3 py-25">收藏展覽</a>
-              </div>
-              <!-- md hide -->
-              <div class="d-md-none position-absolute top-0 end-0">
-                <span class="hot-item-date position-relative">01 JUN — 31 OCT</span>
-              </div>
+  <div class="container bgc-for-mobile">
+    <ul class="list-unstyled">
+      <!-- 2020 台味設計展 -->
+      <li class="hot-item d-md-flex bg-my-bgc mb-3 mb-md-35 py-4 py-md-0">
+        <img src="./assets/images/hot-1.jpg" alt="2020 台味設計展" class="hot-item-img d-block mx-auto">
+        <div class="hot-itme-body pt-2 px-md-4 py-md-47 d-md-flex justify-content-md-between flex-grow-1">
+          <!-- hot-itme-body-1 -->
+          <div class="hot-itme-body-1 d-md-flex flex-md-column position-relative me-md-3">
+            <h3 class="mb-1 hot-item-title lh-base fw-bold">
+              2020 台味設計展
+              <a herf="#" class="ps-25 d-md-none fb-link-1"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon" class="fb-icon"></a>
+            </h3>
+            <p class="mb-2 hot-item-price lh-base">$350</p>
+            <p class="mb-35 hot-item-intro lh-base">
+              一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+            </p>
+            <div class="d-flex justify-content-start mt-auto">
+              <a href="#" class="btn rounded me-2 bg-primary text-white px-3 py-25">購買票券</a>
+              <a href="#" class="btn rounded border-primary text-primary px-3 py-25">收藏展覽</a>
             </div>
-
-            <!-- hot-itme-body-2 -->
-            <!-- md show -->
-            <div class="d-none d-md-flex flex-md-column justify-content-between">
-              <div class="fw-bold fs-5 lh-base">01<br>JUN<br>|<br>31<br>OCT</div>
-              <a href="#" class="fb-link-2"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon" class="fb-icon"></a>
+            <!-- md hide -->
+            <div class="d-md-none position-absolute top-0 end-0">
+              <span class="hot-item-date position-relative">01 JUN — 31 OCT</span>
             </div>
+          </div>
+
+          <!-- hot-itme-body-2 -->
+          <!-- md show -->
+          <div class="d-none d-md-flex flex-md-column justify-content-between">
+            <div class="fw-bold fs-5 lh-base">01<br>JUN<br>|<br>31<br>OCT</div>
+            <a href="#" class="fb-link-2"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon" class="fb-icon"></a>
           </div>
         </div>
-      </div>
-    </li>
-    <!-- 2020 台味設計展 -->
+      </li>
+      <!-- 2020 台味設計展 -->
 
-    <!-- No.22 線上設計展 -->
-    <li class="hot-item bg-my-bgc mb-3 mb-md-35 py-4 py-md-0">
-      <div class="container">
-        <div class="row">
-          <!-- .col-md-4 -->
-          <img src="./assets/images/hot-2.jpg" alt="No.22 線上設計展" class="col-md-4 hot-item-img pe-md-0">
-
-          <!-- .col-md-8 -->
-          <div class="hot-itme-body col-md-8 pt-2 px-md-4 py-md-47 d-md-flex justify-content-md-between">
-            <!-- hot-itme-body-1 -->
-            <div class="hot-itme-body-1 d-md-flex flex-md-column position-relative me-md-3">
-              <h3 class="mb-1 hot-item-title lh-base fw-bold">
-                No.22 線上設計展
-                <a herf="#" class="ps-25 d-md-none fb-link-1"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon" class="fb-icon"></a>
-              </h3>
-              <p class="mb-2 hot-item-price lh-base">$350</p>
-              <p class="mb-35 hot-item-intro lh-base">這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
-              <div class="d-flex justify-content-start mt-auto">
-                <a href="#" class="btn rounded me-2 bg-my-dark text-white px-3 py-25">購買票券</a>
-                <a href="#" class="btn rounded border-my-dark text-red-dark px-3 py-25">收藏展覽</a>
-              </div>
-              <!-- md hide -->
-              <div class="d-md-none position-absolute top-0 end-0">
-                <div class="hot-item-date position-relative">01 JUN — 31 OCT</div>
-              </div>
+      <!-- No.22 線上設計展 -->
+      <li class="hot-item d-md-flex bg-my-bgc mb-3 mb-md-35 py-4 py-md-0">
+        <img src="./assets/images/hot-2.jpg" alt="No.22 線上設計展" class="hot-item-img d-block mx-auto">
+        <div class="hot-itme-body pt-2 px-md-4 py-md-47 d-md-flex justify-content-md-between flex-grow-1">
+          <!-- hot-itme-body-1 -->
+          <div class="hot-itme-body-1 d-md-flex flex-md-column position-relative me-md-3">
+            <h3 class="mb-1 hot-item-title lh-base fw-bold">
+              No.22 線上設計展
+              <a herf="#" class="ps-25 d-md-none fb-link-1"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon"
+                  class="fb-icon"></a>
+            </h3>
+            <p class="mb-2 hot-item-price lh-base">$350</p>
+            <p class="mb-35 hot-item-intro lh-base">
+              這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
+            </p>
+            <div class="d-flex justify-content-start mt-auto">
+              <a href="#" class="btn rounded me-2 bg-primary text-white px-3 py-25">購買票券</a>
+              <a href="#" class="btn rounded border-primary text-primary px-3 py-25">收藏展覽</a>
             </div>
-
-            <!-- hot-itme-body-2 -->
-            <!-- md show -->
-            <div class="d-none d-md-flex flex-md-column justify-content-between">
-              <div class="fw-bold fs-5 lh-base">01<br>JUN<br>|<br>31<br>OCT</div>
-              <a href="#" class="fb-link-2"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon" class="fb-icon"></a>
+            <!-- md hide -->
+            <div class="d-md-none position-absolute top-0 end-0">
+              <span class="hot-item-date position-relative">01 JUN — 31 OCT</span>
             </div>
+          </div>
+
+          <!-- hot-itme-body-2 -->
+          <!-- md show -->
+          <div class="d-none d-md-flex flex-md-column justify-content-between">
+            <div class="fw-bold fs-5 lh-base">01<br>JUN<br>|<br>31<br>OCT</div>
+            <a href="#" class="fb-link-2"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon"
+                class="fb-icon"></a>
           </div>
         </div>
-      </div>
-    </li>
-    <!-- No.22 線上設計展 -->
+      </li>
+      <!-- No.22 線上設計展 -->
 
-    <!-- 高雄設計節 -->
-    <li class="hot-item  mb-3 mb-md-35 py-4 py-md-0">
-      <div class="container bg-my-bgc">
-        <div class="row">
-          <!-- .col-md-4 -->
-          <div class="col-md-4">
-            <img src="./assets/images/hot-3.jpg" alt="高雄設計節" class="hot-item-img">
-          </div>
-
-          <!-- .col-md-8 -->
-          <div class="col-md-8 ps-md-0">
-            <div class="hot-itme-body pt-2 px-md-4 py-md-47 d-md-flex justify-content-md-between">
-              <!-- hot-itme-body-1 -->
-              <div class="hot-itme-body-1 d-md-flex flex-md-column position-relative me-md-3">
-                <h3 class="mb-1 hot-item-title lh-base fw-bold">
-                  高雄設計節
-                  <a herf="#" class="ps-25 d-md-none fb-link-1"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon" class="fb-icon"></a>
-                </h3>
-                <p class="mb-2 hot-item-price lh-base">$350</p>
-                <p class="mb-35 hot-item-intro lh-base">設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？</p>
-                <div class="d-flex justify-content-start mt-auto">
-                  <a href="#" class="btn rounded me-2 bg-my-dark text-white px-3 py-25">購買票券</a>
-                  <a href="#" class="btn rounded border-my-dark text-red-dark px-3 py-25">收藏展覽</a>
-                </div>
-                <!-- md hide -->
-                <div class="d-md-none position-absolute top-0 end-0">
-                  <div class="hot-item-date position-relative">01 JUN — 31 OCT</div>
-                </div>
-              </div>
-  
-              <!-- hot-itme-body-2 -->
-              <!-- md show -->
-              <div class="d-none d-md-flex flex-md-column justify-content-between">
-                <div class="fw-bold fs-5 lh-base">01<br>JUN<br>|<br>31<br>OCT</div>
-                <a href="#" class="fb-link-2"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon" class="fb-icon"></a>
-              </div>
+      <!-- 高雄設計節 -->
+      <li class="hot-item d-md-flex bg-my-bgc mb-3 mb-md-35 py-4 py-md-0">
+        <img src="./assets/images/hot-3.jpg" alt="高雄設計節" class="hot-item-img d-block mx-auto">
+        <div class="hot-itme-body pt-2 px-md-4 py-md-47 d-md-flex justify-content-md-between flex-grow-1">
+          <!-- hot-itme-body-1 -->
+          <div class="hot-itme-body-1 d-md-flex flex-md-column position-relative me-md-3">
+            <h3 class="mb-1 hot-item-title lh-base fw-bold">
+              高雄設計節
+              <a herf="#" class="ps-25 d-md-none fb-link-1"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon"
+                  class="fb-icon"></a>
+            </h3>
+            <p class="mb-2 hot-item-price lh-base">$350</p>
+            <p class="mb-35 hot-item-intro lh-base">
+              設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
+            </p>
+            <div class="d-flex justify-content-start mt-auto">
+              <a href="#" class="btn rounded me-2 bg-primary text-white px-3 py-25">購買票券</a>
+              <a href="#" class="btn rounded border-primary text-primary px-3 py-25">收藏展覽</a>
+            </div>
+            <!-- md hide -->
+            <div class="d-md-none position-absolute top-0 end-0">
+              <span class="hot-item-date position-relative">01 JUN — 31 OCT</span>
             </div>
           </div>
+
+          <!-- hot-itme-body-2 -->
+          <!-- md show -->
+          <div class="d-none d-md-flex flex-md-column justify-content-between">
+            <div class="fw-bold fs-5 lh-base">01<br>JUN<br>|<br>31<br>OCT</div>
+            <a href="#" class="fb-link-2"><img src="./assets/images/facebook-24px.svg" alt="Facebook Icon"
+                class="fb-icon"></a>
+          </div>
         </div>
-      </div>
-    </li>
-    <!-- 高雄設計節 -->
-  </ul>
+      </li>
+      <!-- 高雄設計節 -->
+    </ul>
+  </div>
 </div>
 
 <!-- live -->
-<div class="live pt-md-47">
+<div class="live pt-2 pt-md-47">
   <div class="container">
     <h2 class="fw-bold h-title lh-base mb-2 mb-md-4">直播回顧</h2>
-    <div class="row">
-      <div class="col-md-5">
-        <div class="py-47 bg-my-dark text-white">
-          <h3 class="mb-48">
-            <span class="talk fw-bold lh-base pe-25 border-end border-white">開幕對談</span><spsn class="talk lh-base ps-26">藝術展演巡禮</spsn>
-          </h3>
-          <img src="./assets/images/people.png" alt="Ken Hsu" class="mb-26">
-          <p>臺北現代聯合總監｜Ken Hsu</p>
-          <p>獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
-          <a href="#" class="btn rounded me-2 bg-secondary text-white px-5 py-25">點此觀看</a>
-        </div>
-      </div>
-      <div class="col-md-7">
-        <div class="py-47 bg-my-dark text-white">
-          <h3 class="mb-48">
-            <span class="talk fw-bold lh-base pe-25 border-end border-white">開幕對談</span><spsn class="talk lh-base ps-26">藝術展演巡禮</spsn>
-          </h3>
-          <img src="./assets/images/people.png" alt="Ken Hsu" class="mb-26">
-          <p>臺北現代聯合總監｜Ken Hsu</p>
-          <p>獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
-          <a href="#" class="btn rounded me-2 bg-secondary text-white px-5 py-25">點此觀看</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col bg-my-bgc">
-        One of three columns
-      </div>
-      <div class="col bg-my-dark">
-        One of three columns
-      </div>
-      <div class="col bg-my-bgc">
-        One of three columns
+    <div class="live-bg">
+      <div class="live-content ps-4 py-47 bg-my-dark text-white">
+        <h3 class="mb-48">
+          <span class="talk fw-bold lh-base pe-25 border-end border-white">開幕對談</span><spsn class="talk lh-base ps-26">藝術展演巡禮</spsn>
+        </h3>
+        <img src="./assets/images/people.png" alt="Ken Hsu" class="mb-26">
+        <p class="title-name lh-base mb-2">臺北現代聯合總監｜Ken Hsu</p>
+        <p class="live-intro lh-base">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+        <a href="#" class="btn rounded me-2 bg-secondary text-white px-47 py-25">點此觀看</a>
       </div>
     </div>
   </div>

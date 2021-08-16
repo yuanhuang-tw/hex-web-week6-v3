@@ -3,7 +3,8 @@
 }
 
 .hot-item-title,
-.hot-item-price {
+.hot-item-price,
+.title-name {
   font-size: 20px;
 }
 
@@ -18,15 +19,24 @@
   height: 480px;
 }
 
-nav {
-  white-space: nowrap;
+.nav-scroller {
+  height: 3.25rem; /* 隱藏下方捲軸 */
   overflow-y: hidden;
+  border-bottom: 1px solid #707070;
+
+  nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 1rem; /* 隱藏下方捲軸 */
+  }
 }
 
 .hot {
-  .hot-item {
+  .bgc-for-mobile {
+    background-color: #efefef;
+
     @include pad {
-      background-color: #fff !important;
+      background-color: #fff;
     }
   }
 
@@ -38,12 +48,6 @@ nav {
     @include pad {
       max-width: 350px;
       height: 350px;
-    }
-  }
-
-  .hot-itme-body {
-    @include pad {
-      background-color: #efefef;
     }
   }
 
@@ -85,10 +89,29 @@ nav {
 }
 
 .live {
-  .bg {
+  .live-bg {
     background-image: url("../images/live-bg.png");
     background-position: center;
     background-size: cover;
-    height: 482px;
+    max-height: 464px;
+
+    @include pad {
+      max-height: 482px;
+    }
+  }
+
+  .live-content {
+    @include pad {
+      max-width: 445px;
+    }
+  }
+
+  .live-intro {
+    max-width: 297px;
+
+    @include pad {
+      max-width: 397px;
+      font-size: 20px;
+    }
   }
 }
