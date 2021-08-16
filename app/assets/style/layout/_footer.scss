@@ -1,0 +1,13 @@
+footer {
+  .footer-top {
+    background-image: url("../images/footer-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+
+  a {
+    position: relative;
+    right: -16px;
+  }
+}
