@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="py-4 py-md-45">
+      <div class="container position-relative">
+        <p class="text-my-dark text-center fs-4 lh-1 m-0">EXHIBINECTION</p>
+        <ul class="nav position-absolute top-0 end-0 pe-3 pe-md-0">
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link text-my-light" href="#">Sign in</a>
+          </li>
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link text-my-light" href="#">Sign up</a>
+          </li>
+          <li class="nav-item position-relative">
+            <a class="nav-link text-my-light" href="#">
+              <span class="material-icons">confirmation_number</span>
+            </a>
+            <span class="text-white position-absolute top-0 end-0 bg-secondary badge rounded-pill">3</span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <%- contents %>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
