@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -15176,7 +15177,8 @@ header .nav {
 }
 
 .hot-item-title,
-.hot-item-price {
+.hot-item-price,
+.title-name {
   font-size: 20px;
 }
 
@@ -15191,14 +15193,27 @@ header .nav {
   height: 480px;
 }
 
-nav {
-  white-space: nowrap;
+.nav-scroller {
+  height: 3.25rem;
+  /* 隱藏下方捲軸 */
   overflow-y: hidden;
+  border-bottom: 1px solid #707070;
+}
+
+.nav-scroller nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 1rem;
+  /* 隱藏下方捲軸 */
+}
+
+.hot .bgc-for-mobile {
+  background-color: #efefef;
 }
 
 @media (min-width: 768px) {
-  .hot .hot-item {
-    background-color: #fff !important;
+  .hot .bgc-for-mobile {
+    background-color: #fff;
   }
 }
 
@@ -15213,12 +15228,6 @@ nav {
   .hot .hot-item-img {
     max-width: 350px;
     height: 350px;
-  }
-}
-
-@media (min-width: 768px) {
-  .hot .hot-itme-body {
-    background-color: #efefef;
   }
 }
 
@@ -15260,11 +15269,34 @@ nav {
   top: 2px;
 }
 
-.live .bg {
+.live .live-bg {
   background-image: url("../images/live-bg.png");
   background-position: center;
   background-size: cover;
-  height: 482px;
+  max-height: 464px;
+}
+
+@media (min-width: 768px) {
+  .live .live-bg {
+    max-height: 482px;
+  }
+}
+
+@media (min-width: 768px) {
+  .live .live-content {
+    max-width: 445px;
+  }
+}
+
+.live .live-intro {
+  max-width: 297px;
+}
+
+@media (min-width: 768px) {
+  .live .live-intro {
+    max-width: 397px;
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
