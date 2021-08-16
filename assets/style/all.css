@@ -15232,7 +15232,7 @@ header .nav {
 }
 
 @media (min-width: 768px) {
-  .hot .hot-itme-body-1 {
+  .hot .hot-item-body-1 {
     max-width: 540px;
   }
 }
@@ -15278,7 +15278,7 @@ header .nav {
 
 @media (min-width: 768px) {
   .live .live-bg {
-    max-height: 482px;
+    max-height: 484px;
   }
 }
 
