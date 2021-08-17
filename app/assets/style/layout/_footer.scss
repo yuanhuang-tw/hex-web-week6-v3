@@ -1,4 +1,12 @@
 footer {
+  .footer-input p {
+    font-size: 24px;
+
+    @include pad {
+      font-size: 32px;
+    }
+  }
+
   .footer-top {
     background-image: url("../images/footer-bg.jpg");
     background-position: center;

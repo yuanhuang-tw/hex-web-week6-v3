@@ -1,11 +1,12 @@
-.h-title,
-.footer-input p {
+.h-title {
   font-size: 32px;
 }
 
 .hot-item-title,
 .hot-item-price,
-.title-name {
+.title-name,
+.like-h3,
+.like-p {
   font-size: 20px;
 }
 
@@ -42,9 +43,10 @@
   }
 
   .hot-item-img {
-    max-width: 345px;
-    height: 345px;
-    object-fit: cover;
+    // max-width: 345px;
+    // height: 345px;
+    // object-fit: cover;
+    @extend %small-img;
 
     @include pad {
       max-width: 350px;
@@ -113,6 +115,17 @@
     @include pad {
       max-width: 397px;
       font-size: 20px;
+    }
+  }
+}
+
+.like {
+  .card-img {
+    @extend %small-img;
+
+    @include pad {
+      max-width: 350px;
+      height: 350px;
     }
   }
 }
