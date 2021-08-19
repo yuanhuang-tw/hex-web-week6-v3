@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -205,13 +206,13 @@
 </div>
 
 <!-- like -->
-<div class="like pt-4 pt-md-6">
+<!-- <div class="like pt-4 pt-md-6 d-block d-md-none">
   <div class="container">
     <h2 class="fw-bold h-title lh-base mb-2 mb-md-4">猜你也喜歡...</h2>
-    <ul class="list-unstyled row justify-content-center">
+    <ul class="list-unstyled row">
       <li class="mb-3 col-md-4">
         <div class="card border-0">
-          <img src="./assets/images/like-1.jpg" class="card-img card-img-top rounded-0" alt="No.22 線上設計展">
+          <img src="./assets/images/like-1.jpg" class="card-img card-img-top rounded-0 d-block mx-auto" alt="No.22 線上設計展">
           <div class="card-body pt-2 px-0 pb-0">
             <h3 class="card-text fw-bold lh-base like-h3 mb-1">No.22 線上設計展</h3>
             <p class="card-text lh-base like-p">$350</p>
@@ -220,7 +221,7 @@
       </li>
       <li class="mb-3 col-md-4">
         <div class="card border-0">
-          <img src="./assets/images/like-2.jpg" class="card-img card-img-top rounded-0" alt="No.22 線上設計展">
+          <img src="./assets/images/like-2.jpg" class="card-img card-img-top rounded-0 d-block mx-auto" alt="No.22 線上設計展">
           <div class="card-body pt-2 px-0 pb-0">
             <h3 class="card-text fw-bold lh-base like-h3 mb-1">No.22 線上設計展</h3>
             <p class="card-text lh-base like-p">$350</p>
@@ -229,7 +230,7 @@
       </li>
       <li class="mb-3 col-md-4">
         <div class="card border-0">
-          <img src="./assets/images/like-3.jpg" class="card-img card-img-top rounded-0" alt="No.22 線上設計展">
+          <img src="./assets/images/like-3.jpg" class="card-img card-img-top rounded-0 d-block mx-auto" alt="No.22 線上設計展">
           <div class="card-body pt-2 px-0 pb-0">
             <h3 class="card-text fw-bold lh-base like-h3 mb-1">No.22 線上設計展</h3>
             <p class="card-text lh-base like-p">$350</p>
@@ -237,6 +238,56 @@
         </div>
       </li>
     </ul>
+  </div>
+</div> -->
+
+<!-- like -->
+<div class="like pt-4 pt-md-6">
+  <div class="container">
+    <h2 class="fw-bold h-title lh-base mb-2 mb-md-4">猜你也喜歡...</h2>
+    <div class="row">
+      <div class="col-12 col-md-11 offset-md-1">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <!-- 1 -->
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="./assets/images/like-1.jpg" class="card-img-top card-img rounded-0" alt="...">
+                <div class="card-body px-0 pt-2 pb-0">
+                  <p class="card-text m-0 pb-1 fw-bold lh-base like-h3">No.22 線上設計展</p>
+                  <p class="card-text lh-base like-p">$350</p>
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="./assets/images/like-2.jpg" class="card-img-top card-img rounded-0" alt="...">
+                <div class="card-body px-0 pt-2 pb-0">
+                  <p class="card-text m-0 pb-1 fw-bold lh-base like-h3">No.22 線上設計展</p>
+                  <p class="card-text lh-base like-p">$350</p>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="./assets/images/like-3.jpg" class="card-img-top card-img rounded-0" alt="...">
+                <div class="card-body px-0 pt-2 pb-0">
+                  <p class="card-text m-0 pb-1 fw-bold lh-base like-h3">No.22 線上設計展</p>
+                  <p class="card-text lh-base like-p">$350</p>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -273,8 +324,21 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+          768:{
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }
+      });
+    </script>
   </body>
 
 </html>
