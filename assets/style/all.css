@@ -15679,8 +15679,18 @@ header .nav {
 
 @media (min-width: 768px) {
   .like .card-img {
-    width: 100%;
+    width: 350px;
     height: 350px;
+  }
+}
+
+.like .swiper-slide + .swiper-slide {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .like .swiper-slide + .swiper-slide {
+    margin-left: 30px;
   }
 }
 
