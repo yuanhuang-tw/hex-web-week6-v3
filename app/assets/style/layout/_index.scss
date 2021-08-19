@@ -135,8 +135,16 @@
     @extend %small-img;
 
     @include pad {
-      width: 100%;
+      width: 350px;
       height: 350px;
+    }
+  }
+
+  .swiper-slide + .swiper-slide {
+    margin-left: 0;
+
+    @include pad {
+      margin-left: 30px;
     }
   }
 }

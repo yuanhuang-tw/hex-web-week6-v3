@@ -75,16 +75,19 @@
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        breakpoints: {
-          768:{
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        }
-      });
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      breakpoints: {
+        768:{
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination"
+      }
+    });
     </script>
   </body>
 
