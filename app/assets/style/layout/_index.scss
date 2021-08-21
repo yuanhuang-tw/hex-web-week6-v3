@@ -31,6 +31,10 @@
     white-space: nowrap;
     padding-bottom: 1rem; /* 隱藏下方捲軸 */
   }
+
+  a:hover {
+    border-bottom: 1px solid #e31277;
+  }
 }
 
 .hot {
@@ -43,9 +47,6 @@
   }
 
   .hot-item-img {
-    // max-width: 345px;
-    // height: 345px;
-    // object-fit: cover;
     @extend %small-img;
 
     @include pad {

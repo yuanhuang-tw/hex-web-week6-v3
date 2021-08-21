@@ -1,0 +1,13 @@
+.product {
+  .h-title {
+    font-size: 28px;
+
+    @include pad {
+      font-size: 36px;
+    }
+  }
+
+  .product-date {
+    font-size: 20px;
+  }
+}
